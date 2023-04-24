@@ -1,0 +1,8 @@
+<h1>Upgrade Salesforce Version</h1>
+<%= @current_option_data %>
+<p>
+    <%= @current_option_data["content"] %>
+</p>
+<% @current_option_data["steps"].each do |step| %>
+    <%= link_to "#{step["description"]}", "#{upgrade_salesforce_version_path}?step=#{step["id"]}" %>
+<% end %>

@@ -1,0 +1,89 @@
+save-current-admin-settings-as-backup:
+  content: "Before installing v5.5, print as PDF or take a screenshot of your current Invoca Admin page. When you upgrade to version 5.5 from prior versions, the Invoca Admin settings will need to be reconfigured. Having a screenshot to reference will help you reconfigure the settings quickly. Please note, if you have anything selected in the 'Map Invoca Call Data to Leads & Contacts' section make sure you keep note of all the index names because you will need to re-map this data in the new version admin settings"
+  steps:
+    - id: "install-sandbox"
+      description: "backup acquired"
+
+install-sandbox:
+  content: "It is a best practice to install and test managed packages in your sandbox, and most ideally a full copy sandbox. Click the following link to install in your sandbox org: https://test.salesforce.com/packaging/installPackage.apexp?p0=04t2I000000MhnHQAS. Please note that once you upgrade to version 5.5, it is not possible to revert back to a prior version! If you have any issues installing the package, please search for Deployment in your Salesforce Setup, then click Deployment Status and resolve any errors. This package does require that you have some custom lookup fields available in your instance. Please ensure that you review the package requirements before installing. After you have installed the package, please make sure all the [pre-installation checklist] (https://community.invoca.com/t5/salesforce-setup-guides/salesforce-sales-cloud-pre-installation-checklist/ta-p/646#U646) items have been completed. You will need to be logged into your Invoca account to view the pre-checklist documentation"
+  steps:
+    - id: "matching"
+      description: "package installed"
+
+matching:
+  content: "Which matching option do your current settings look like"
+  steps:
+    - id: "option-1"
+      description: "Option 1: Match or create a new Lead"
+    - id: "option-2"
+      description: "Option 2: Only match to existing Leads"
+    - id: "option-3"
+      description: "Option 3: Only create new Leads"
+    - id: "option-4"
+      description: "Option 4: Only create the Invoca Call Log object"
+
+option-1:
+  content: "You have chosen option 1"
+  steps:
+    - id: "matching-1"
+      description: "Next"
+
+option-2:
+  content: "You have chosen option 2"
+  steps:
+    - id: "matching-2"
+      description: "Next"
+
+option-3:
+  content: "You have chosen option 3"
+  steps:
+    - id: "matching-3"
+      description: "Next"
+
+option-4:
+  content: "You have chosen option 4"
+  steps:
+    - id: "matching-4"
+      description: "Next"
+
+matching-1:
+  content: "The UI is a bit different than previous versions so this screenshot will display how to configure your admin settings with the new version"
+  steps:
+    - id: "mapping"
+      description: "Next"
+
+matching-2:
+  content: "The UI is a bit different than previous versions so this screenshot will display how to configure your admin settings with the new version"
+  steps:
+    - id: "mapping"
+      description: "Next"
+
+matching-3:
+  content: "The UI is a bit different than previous versions so this screenshot will display how to configure your admin settings with the new version"
+  steps:
+    - id: "mapping"
+      description: "Next"
+
+matching-4:
+  content: "The UI is a bit different than previous versions so this screenshot will display how to configure your admin settings with the new version"
+  steps:
+    - id: "mapping"
+      description: "Next"
+
+mapping:
+  content: "If there was anyting selected in the 'Map Invoca Call Data to Leads & Contacts' section (based on your PDF or screenshot) make sure the same values are selected as the previous admin settings"
+  steps:
+    - id: "send-data-back-to-invoca"
+      description: "Next"
+
+send-data-back-to-invoca:
+  content: "Depending on what was selected in the 'Optional: Send Data from Salesforce to Invoca' section make sure the same selection is checked as the previous admin settings"
+  steps:
+    - id: "new-backup-aquired"
+      description: "Next"
+
+new-backup-aquired:
+  content: "Now that your Invoca Admin settings are completed in your sandbox environment print as PDF or take a screenshot for backup purposes. This will be used as a backup when you install the the new version in your production environment and re-configure the settings in production."
+  steps:
+    - id: 
+      description: "Next"
