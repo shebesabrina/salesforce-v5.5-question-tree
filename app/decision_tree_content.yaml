@@ -1,17 +1,26 @@
+getting-started:
+  content: "getting-started.md"
+  image: "intro_SFDC.jpg"
+  steps:
+    - id: "save-current-admin-settings-as-backup"
+      description: "Let's get started"
+
 save-current-admin-settings-as-backup:
-  content: "Before installing v5.5, print as PDF or take a screenshot of your current Invoca Admin page. When you upgrade to version 5.5 from prior versions, the Invoca Admin settings will need to be reconfigured. Having a screenshot to reference will help you reconfigure the settings quickly. Please note, if you have anything selected in the 'Map Invoca Call Data to Leads & Contacts' section make sure you keep note of all the index names because you will need to re-map this data in the new version admin settings"
+  content: "save-current-admin-settings-as-backup.md"
+  image: "backup_old_version.png"
   steps:
     - id: "install-sandbox"
       description: "backup acquired"
 
 install-sandbox:
-  content: "It is a best practice to install and test managed packages in your sandbox, and most ideally a full copy sandbox. Click the following link to install in your sandbox org: https://test.salesforce.com/packaging/installPackage.apexp?p0=04t2I000000MhnHQAS. Please note that once you upgrade to version 5.5, it is not possible to revert back to a prior version! If you have any issues installing the package, please search for Deployment in your Salesforce Setup, then click Deployment Status and resolve any errors. This package does require that you have some custom lookup fields available in your instance. Please ensure that you review the package requirements before installing. After you have installed the package, please make sure all the [pre-installation checklist] (https://community.invoca.com/t5/salesforce-setup-guides/salesforce-sales-cloud-pre-installation-checklist/ta-p/646#U646) items have been completed. You will need to be logged into your Invoca account to view the pre-checklist documentation"
+  content: "install-sandbox.md"
+  image: "all_users.png"
   steps:
     - id: "matching"
       description: "package installed"
 
 matching:
-  content: "Which matching option do your current settings look like"
+  content: "matching.md"
   steps:
     - id: "option-1"
       description: "Option 1: Match or create a new Lead"
@@ -23,67 +32,125 @@ matching:
       description: "Option 4: Only create the Invoca Call Log object"
 
 option-1:
-  content: "You have chosen option 1"
+  content: "option-1.md"
+  image: "option_1_old.png"
   steps:
     - id: "matching-1"
       description: "Next"
 
 option-2:
-  content: "You have chosen option 2"
+  content: "option-2.md"
+  image: "option_2_old.png"
   steps:
     - id: "matching-2"
       description: "Next"
 
 option-3:
-  content: "You have chosen option 3"
+  content: "option-3.md"
+  image: "option_3_old.png"
   steps:
     - id: "matching-3"
       description: "Next"
 
 option-4:
-  content: "You have chosen option 4"
+  content: "option-4.md"
+  image: "option_4_old.png"
   steps:
     - id: "matching-4"
       description: "Next"
 
 matching-1:
-  content: "The UI is a bit different than previous versions so this screenshot will display how to configure your admin settings with the new version"
+  content: "new-matching.md"
+  image: "option_1_new.png"
   steps:
-    - id: "mapping"
+    - id: "custom-matching"
       description: "Next"
 
 matching-2:
-  content: "The UI is a bit different than previous versions so this screenshot will display how to configure your admin settings with the new version"
+  content: "new-matching.md"
+  image: "option_2_new.png"
   steps:
-    - id: "mapping"
+    - id: "call-duration-filter"
       description: "Next"
 
 matching-3:
-  content: "The UI is a bit different than previous versions so this screenshot will display how to configure your admin settings with the new version"
+  content: "new-matching.md"
+  image: "option_3_new.png"
   steps:
-    - id: "mapping"
+    - id: "custom-matchinging"
       description: "Next"
 
 matching-4:
-  content: "The UI is a bit different than previous versions so this screenshot will display how to configure your admin settings with the new version"
+  content: "new-matching.md"
+  image: "option_4_new.png"
   steps:
+    - id: "call-duration-filter"
+      description: "Next"
+
+call-duration-filter:
+  content: call-duration-filter.md
+  image: calll-duration-filter.png
+  steps:
+    - id: "custom-matching"
+      description: "Next"
+
+custom-matching:
+  content: "custom-matching.md"
+  image: "custom-matching-enabled.png"
+  steps:
+    - id: "custom-matching-enabled"
+      description: "Custom matching is selected"
+    - id: "mapping"
+      description: "Custom matching is NOT selected"
+
+custom-matching-enabled:
+  content: "custom-matching-enabled.md"
+  steps: 
     - id: "mapping"
       description: "Next"
 
 mapping:
-  content: "If there was anyting selected in the 'Map Invoca Call Data to Leads & Contacts' section (based on your PDF or screenshot) make sure the same values are selected as the previous admin settings"
+  content: "mapping.md"
+  image: "mapping.png"
   steps:
     - id: "send-data-back-to-invoca"
       description: "Next"
 
 send-data-back-to-invoca:
-  content: "Depending on what was selected in the 'Optional: Send Data from Salesforce to Invoca' section make sure the same selection is checked as the previous admin settings"
+  content: "send-data-back-to-invoca.md"
+  image: "send-data-back-to-invoca.png"
   steps:
     - id: "new-backup-aquired"
       description: "Next"
 
 new-backup-aquired:
-  content: "Now that your Invoca Admin settings are completed in your sandbox environment print as PDF or take a screenshot for backup purposes. This will be used as a backup when you install the the new version in your production environment and re-configure the settings in production."
+  content: "new-backup-aquired.md"
   steps:
-    - id: 
+    - id: "invoca-integration-setup"
       description: "Next"
+
+invoca-integration-setup:
+  content: "invoca-integration-setup.md"
+  steps:
+    - id: "determining-which-level-to-setup"
+      description: "Great, let's get this set up"
+
+determining-which-level-to-setup:
+  content: "determining-which-level-to-setup.md"
+  steps:
+    - id: "option-1-setup-on-profile-level"
+      description: "Option 1 - setup my sandbox instance on the Profile Level"
+    - id: "option-2-setup-on-network-level"
+      description: "Option 2 - setup my sandbox instance on the Network Level"
+
+option-1-setup-on-profile-level:
+  content: "option-1-setup-on-profile-level.md"
+  steps:
+    - id: 'setup-on-profile-level'
+      description: 'Next'
+
+option-2-setup-on-profile-level:
+  content: "option-2-setup-on-profile-level.md"
+  steps:
+    - id: 'setup-on-profile-level'
+      description: 'Next'

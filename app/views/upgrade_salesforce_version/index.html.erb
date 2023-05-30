@@ -1,8 +1,14 @@
 <h1>Upgrade Salesforce Version</h1>
-<%= @current_option_data %>
+
 <p>
-    <%= @current_option_data["content"] %>
+    <%= sanitize @html_content.html_safe %>
 </p>
+<div>
+
+    <% if @current_option_data["image"] %>
+        <%= image_tag(@current_option_data["image"], width: "700px") %>
+    <% end %>
+</div>
 <% @current_option_data["steps"].each do |step| %>
     <%= link_to "#{step["description"]}", "#{upgrade_salesforce_version_path}?step=#{step["id"]}" %>
 <% end %>

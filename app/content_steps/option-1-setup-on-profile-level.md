@@ -1,0 +1,1 @@
+Great! You've selected option 1 which is to connect your integration on the Profile level because your current production is set up on the Network level
