@@ -10,5 +10,5 @@
     <% end %>
 </div>
 <% @current_option_data["steps"].each do |step| %>
-    <%= link_to "#{step["description"]}", "#{upgrade_salesforce_version_path}?step=#{step["id"]}" %>
+    <%= button_to step["description"], upgrade_salesforce_version_path, method: :get, params: { step: step["id"] } %>
 <% end %>

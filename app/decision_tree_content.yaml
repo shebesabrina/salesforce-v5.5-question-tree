@@ -137,6 +137,7 @@ invoca-integration-setup:
 
 determining-which-level-to-setup:
   content: "determining-which-level-to-setup.md"
+  image: "determining-which-level-to-setup.png"
   steps:
     - id: "option-1-setup-on-profile-level"
       description: "Option 1 - setup my sandbox instance on the Profile Level"
@@ -146,11 +147,32 @@ determining-which-level-to-setup:
 option-1-setup-on-profile-level:
   content: "option-1-setup-on-profile-level.md"
   steps:
-    - id: 'setup-on-profile-level'
+    - id: 'test-call'
       description: 'Next'
 
-option-2-setup-on-profile-level:
-  content: "option-2-setup-on-profile-level.md"
+option-2-setup-on-network-level:
+  content: "option-2-setup-on-network-level.md"
   steps:
-    - id: 'setup-on-profile-level'
+    - id: 'test-call'
       description: 'Next'
+
+test-call:
+  content: "test-call.md"
+  image: "test-call.png"
+  steps:
+    - id: 'webhook-verification'
+      description: 'Next'
+
+webhook-verification:
+  content: "webhook-verification.md"
+  image: "webhook-verification.png"
+  steps:
+    - id: "test-verification"
+      description: "Next"
+
+test-verification:
+  content: "test-verification.md"
+  image: "test-verification.png"
+  steps:
+    - id: "production"
+      description: "Next"

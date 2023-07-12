@@ -1,9 +1,11 @@
 require 'redcarpet'
 
 class UpgradeSalesforceVersionController < ApplicationController
+    layout "application"
     attr_reader :option, :options, :current_option_data, :renderer
     
     def initialize
+        super #makes sure application is initialized too.
         @options = YAML.load_file(File.join(File.dirname(__FILE__), '../decision_tree_content.yaml'))
         @renderer = Redcarpet::Render::HTML.new(render_options = {})
     end
