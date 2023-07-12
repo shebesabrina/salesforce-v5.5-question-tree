@@ -9,6 +9,10 @@
         <%= image_tag(@current_option_data["image"], width: "700px") %>
     <% end %>
 </div>
-<% @current_option_data["steps"].each do |step| %>
-    <%= button_to step["description"], upgrade_salesforce_version_path, method: :get, params: { step: step["id"] } %>
-<% end %>
+<div class="button-container">
+    <% @current_option_data["steps"].each do |step| %>
+        <div class="button">
+        <%= button_to step["description"], upgrade_salesforce_version_path, method: :get, params: { step: step["id"] } %>
+        </div>
+    <% end %>
+</div>
