@@ -1,1 +1,0 @@
-The UI is a bit different than previous versions so this screenshot will display how to configure your admin settings with the new version

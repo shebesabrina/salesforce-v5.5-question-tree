@@ -1,3 +1,5 @@
+### Step 2 - Install package in Sandbox
+
 It is a best practice to install and test managed packages in your sandbox, and most ideally a full copy sandbox of your production instance. 
 
 **Please note** that once you upgrade to version 5.5, it is not possible to revert back to a prior version! 

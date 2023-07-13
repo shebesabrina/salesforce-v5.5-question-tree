@@ -16,11 +16,11 @@ install-sandbox:
   content: "install-sandbox.md"
   image: "all_users.png"
   steps:
-    - id: "matching"
+    - id: "config-options"
       description: "package installed"
 
-matching:
-  content: "matching.md"
+config-options:
+  content: "config-options.md"
   steps:
     - id: "option-1"
       description: "Option 1: Match or create a new Lead"
@@ -60,28 +60,28 @@ option-4:
       description: "Next"
 
 matching-1:
-  content: "new-matching.md"
+  content: "new-option.md"
   image: "option_1_new.png"
   steps:
     - id: "custom-matching"
       description: "Next"
 
 matching-2:
-  content: "new-matching.md"
+  content: "new-option.md"
   image: "option_2_new.png"
   steps:
     - id: "call-duration-filter"
       description: "Next"
 
 matching-3:
-  content: "new-matching.md"
+  content: "new-option.md"
   image: "option_3_new.png"
   steps:
     - id: "custom-matchinging"
       description: "Next"
 
 matching-4:
-  content: "new-matching.md"
+  content: "new-option.md"
   image: "option_4_new.png"
   steps:
     - id: "call-duration-filter"

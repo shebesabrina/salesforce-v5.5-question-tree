@@ -3,7 +3,7 @@
 <p>
     <%= sanitize @html_content.html_safe %>
 </p>
-<div>
+<div class="image">
 
     <% if @current_option_data["image"] %>
         <%= image_tag(@current_option_data["image"], width: "700px") %>

@@ -31,3 +31,7 @@ div.button-container {
 div.button button {
     font-size: 20px;
 }
+
+div.image {
+    padding-bottom: 15px;
+}
