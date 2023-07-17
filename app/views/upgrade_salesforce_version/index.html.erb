@@ -9,7 +9,11 @@
         <%= image_tag(@current_option_data["image"], width: "700px") %>
     <% end %>
 </div>
-<div class="button-container">
+<div class="buttons-container">
+
+        <%= link_to "<button>Back</button>".html_safe, :back %>
+
+
     <% @current_option_data["steps"].each do |step| %>
         <div class="button">
         <%= button_to step["description"], upgrade_salesforce_version_path, method: :get, params: { step: step["id"] } %>
