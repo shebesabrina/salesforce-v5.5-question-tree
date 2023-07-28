@@ -16,7 +16,11 @@
 
     <% @current_option_data["steps"].each do |step| %>
         <div class="button">
-        <%= button_to step["description"], upgrade_salesforce_version_path, method: :get, params: { step: step["id"] } %>
+        <% if step["id"] == "finished" %>
+            <%= button_to "Finished", projects_path, method: :get if step["id"] == "finished" %>
+        <% else %>
+            <%= button_to step["description"], upgrade_salesforce_version_path, method: :get, params: { step: step["id"] } %>
+        <% end %>
         </div>
     <% end %>
 </div>

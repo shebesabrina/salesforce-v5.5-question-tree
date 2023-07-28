@@ -347,5 +347,5 @@ prod-test-verification:
   content: "prod-test-verification.md"
   image: "test-verification.png"
   steps:
-    - id: ""
+    - id: "finished"
       description: "Finished!"
