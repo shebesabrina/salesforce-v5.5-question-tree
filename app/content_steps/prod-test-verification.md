@@ -14,4 +14,4 @@ Here are a few extra things that you can verify based on your configuration.
 - If you are mapping data to a Salesforce object, first check to make sure that the Invoca Call Log has the data, then check to see if it was mapped to the Salesforce object.
 - If you're sending data back to Invoca, update the stage on the Lead or Opportunity object to verify that the Stage updated the Signal in Invoca.
 
-One all your tests have passed you'll want to complete the same setup in your Production instance. Congratulations! Let's get started!!
+Congratulations! You've finished the Salesforce upgrade!!

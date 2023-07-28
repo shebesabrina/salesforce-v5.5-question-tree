@@ -1,3 +1,5 @@
+### Step 4 - Configure Salesforce app in Invoca: Set up on the Network level
+
 Great! You've selected option 2 which is to connect your integration on the Network level because your current production is set up on the Profile level
 The following steps will walk you through the process of how to set up the integration in Invoca so it's pointing to your sandbox instance with the newest version installed. That way you can test with your Sandbox instance while keep your Production instance untouched till all tests pass.
 

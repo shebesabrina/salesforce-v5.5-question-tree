@@ -174,5 +174,178 @@ test-verification:
   content: "test-verification.md"
   image: "test-verification.png"
   steps:
-    - id: "production"
+    - id: "prod-getting-started"
       description: "Next"
+
+prod-getting-started:
+  content: "prod-getting-started.md"
+  image: "intro_SFDC.jpg"
+  steps:
+    - id: "prod-save-current-admin-settings-as-backup"
+      description: "Let's get started"
+
+prod-save-current-admin-settings-as-backup:
+  content: "save-current-admin-settings-as-backup.md"
+  image: "backup_old_version.png"
+  steps:
+    - id: "install-prod"
+      description: "backup acquired"
+
+install-prod:
+  content: "install-prod.md"
+  image: "all_users.png"
+  steps:
+    - id: "prod-config-options"
+      description: "package installed"
+
+prod-config-options:
+  content: "config-options.md"
+  steps:
+    - id: "prod-option-1"
+      description: "Option 1: Match or create a new Lead"
+    - id: "prod-option-2"
+      description: "Option 2: Only match to existing Leads"
+    - id: "prod-option-3"
+      description: "Option 3: Only create new Leads"
+    - id: "prod-option-4"
+      description: "Option 4: Only create the Invoca Call Log object"
+
+prod-option-1:
+  content: "option-1.md"
+  image: "option_1_old.png"
+  steps:
+    - id: "prod-matching-1"
+      description: "Next"
+
+prod-option-2:
+  content: "option-2.md"
+  image: "option_2_old.png"
+  steps:
+    - id: "prod-matching-2"
+      description: "Next"
+
+prod-option-3:
+  content: "option-3.md"
+  image: "option_3_old.png"
+  steps:
+    - id: "prod-matching-3"
+      description: "Next"
+
+prod-option-4:
+  content: "option-4.md"
+  image: "option_4_old.png"
+  steps:
+    - id: "prod-matching-4"
+      description: "Next"
+
+prod-matching-1:
+  content: "new-option.md"
+  image: "option_1_new.png"
+  steps:
+    - id: "prod-custom-matching"
+      description: "Next"
+
+prod-matching-2:
+  content: "new-option.md"
+  image: "option_2_new.png"
+  steps:
+    - id: "prod-call-duration-filter"
+      description: "Next"
+
+prod-matching-3:
+  content: "new-option.md"
+  image: "option_3_new.png"
+  steps:
+    - id: "prod-custom-matchinging"
+      description: "Next"
+
+prod-matching-4:
+  content: "new-option.md"
+  image: "option_4_new.png"
+  steps:
+    - id: "prod-call-duration-filter"
+      description: "Next"
+
+prod-call-duration-filter:
+  content: call-duration-filter.md
+  image: calll-duration-filter.png
+  steps:
+    - id: "prod-custom-matching"
+      description: "Next"
+
+prod-custom-matching:
+  content: "custom-matching.md"
+  image: "custom-matching-enabled.png"
+  steps:
+    - id: "prod-custom-matching-enabled"
+      description: "Custom matching is selected"
+    - id: "prod-mapping"
+      description: "Custom matching is NOT selected"
+
+prod-custom-matching-enabled:
+  content: "custom-matching-enabled.md"
+  steps: 
+    - id: "prod-mapping"
+      description: "Next"
+
+prod-mapping:
+  content: "mapping.md"
+  image: "mapping.png"
+  steps:
+    - id: "prod-send-data-back-to-invoca"
+      description: "Next"
+
+prod-send-data-back-to-invoca:
+  content: "send-data-back-to-invoca.md"
+  image: "send-data-back-to-invoca.png"
+  steps:
+    - id: "prod-invoca-integration-setup"
+      description: "Next"
+
+prod-invoca-integration-setup:
+  content: "invoca-integration-setup.md"
+  steps:
+    - id: "prod-determining-which-level-to-setup"
+      description: "Great, let's get this set up"
+
+prod-determining-which-level-to-setup:
+  content: "prod-determining-which-level-to-setup.md"
+  image: "determining-which-level-to-setup.png"
+  steps:
+    - id: "prod-option-1-setup-on-profile-level"
+      description: "Option 1 - setup my production instance on the Profile Level"
+    - id: "prod-option-2-setup-on-network-level"
+      description: "Option 2 - setup my production instance on the Network Level"
+
+prod-option-1-setup-on-profile-level:
+  content: "option-1-setup-on-profile-level.md"
+  steps:
+    - id: 'test-call'
+      description: 'Next'
+
+prod-option-2-setup-on-network-level:
+  content: "option-2-setup-on-network-level.md"
+  steps:
+    - id: 'prod-test-call'
+      description: 'Next'
+
+prod-test-call:
+  content: "test-call.md"
+  image: "test-call.png"
+  steps:
+    - id: 'prod-webhook-verification'
+      description: 'Next'
+
+prod-webhook-verification:
+  content: "webhook-verification.md"
+  image: "webhook-verification.png"
+  steps:
+    - id: "prod-test-verification"
+      description: "Next"
+
+prod-test-verification:
+  content: "prod-test-verification.md"
+  image: "test-verification.png"
+  steps:
+    - id: ""
+      description: "Finished!"
