@@ -11,8 +11,7 @@
 </div>
 <div class="buttons-container">
 
-        <%= link_to "<button>Back</button>".html_safe, :back %>
-
+    <%= link_to "<button>Back</button>".html_safe, 'javascript:history.back()' %>
 
     <% @current_option_data["steps"].each do |step| %>
         <div class="button">

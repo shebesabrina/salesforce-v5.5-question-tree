@@ -77,7 +77,7 @@ matching-3:
   content: "new-option.md"
   image: "option_3_new.png"
   steps:
-    - id: "custom-matchinging"
+    - id: "custom-matching"
       description: "Next"
 
 matching-4:
