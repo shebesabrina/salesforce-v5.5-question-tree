@@ -20,7 +20,7 @@ class UpgradeSalesforceVersionController < ApplicationController
         end
 
         @current_option_data = @options[@option]
-        current_content_step = File.read(File.join(File.dirname(__FILE__), "../content_steps/#{@current_option_data["content"]}"))
+        current_content_step = File.read(File.join(File.dirname(__FILE__), "../content_steps/salesforce_upgrade/#{@current_option_data["content"]}"))
         markdown_content = Redcarpet::Markdown.new(@renderer, extensions = {})
         @html_content = markdown_content.render(current_content_step)
     end
